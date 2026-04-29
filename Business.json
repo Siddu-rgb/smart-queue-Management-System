@@ -1,0 +1,85 @@
+{
+  "name": "Business",
+  "type": "object",
+  "properties": {
+    "name": {
+      "type": "string",
+      "title": "Business Name"
+    },
+    "type": {
+      "type": "string",
+      "title": "Business Type",
+      "enum": [
+        "salon",
+        "clinic",
+        "pharmacy",
+        "repair_shop",
+        "store",
+        "other"
+      ]
+    },
+    "address": {
+      "type": "string",
+      "title": "Address"
+    },
+    "city": {
+      "type": "string",
+      "title": "City"
+    },
+    "phone": {
+      "type": "string",
+      "title": "Phone"
+    },
+    "email": {
+      "type": "string",
+      "title": "Email"
+    },
+    "opening_time": {
+      "type": "string",
+      "title": "Opening Time"
+    },
+    "closing_time": {
+      "type": "string",
+      "title": "Closing Time"
+    },
+    "is_active": {
+      "type": "boolean",
+      "title": "Active",
+      "default": true
+    },
+    "subscription_plan": {
+      "type": "string",
+      "title": "Plan",
+      "enum": [
+        "free",
+        "starter",
+        "pro",
+        "enterprise"
+      ],
+      "default": "free"
+    },
+    "logo_url": {
+      "type": "string",
+      "title": "Logo URL"
+    },
+    "avg_service_time": {
+      "type": "number",
+      "title": "Avg Service Time (min)",
+      "default": 15
+    },
+    "max_capacity": {
+      "type": "number",
+      "title": "Max Queue Capacity",
+      "default": 50
+    },
+    "counters": {
+      "type": "number",
+      "title": "Number of Counters",
+      "default": 1
+    }
+  },
+  "required": [
+    "name",
+    "type"
+  ]
+}

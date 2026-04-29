@@ -1,0 +1,36 @@
+{
+  "name": "Service",
+  "type": "object",
+  "properties": {
+    "business_id": {
+      "type": "string",
+      "title": "Business ID"
+    },
+    "name": {
+      "type": "string",
+      "title": "Service Name"
+    },
+    "duration": {
+      "type": "number",
+      "title": "Duration (min)",
+      "default": 15
+    },
+    "price": {
+      "type": "number",
+      "title": "Price (\u20b9)"
+    },
+    "is_active": {
+      "type": "boolean",
+      "title": "Active",
+      "default": true
+    },
+    "description": {
+      "type": "string",
+      "title": "Description"
+    }
+  },
+  "required": [
+    "business_id",
+    "name"
+  ]
+}

@@ -1,0 +1,47 @@
+{
+  "name": "Staff",
+  "type": "object",
+  "properties": {
+    "business_id": {
+      "type": "string",
+      "title": "Business ID"
+    },
+    "name": {
+      "type": "string",
+      "title": "Name"
+    },
+    "role": {
+      "type": "string",
+      "title": "Role",
+      "enum": [
+        "receptionist",
+        "technician",
+        "doctor",
+        "manager"
+      ],
+      "default": "receptionist"
+    },
+    "counter_number": {
+      "type": "number",
+      "title": "Counter Number"
+    },
+    "is_active": {
+      "type": "boolean",
+      "title": "Active",
+      "default": true
+    },
+    "tokens_served_today": {
+      "type": "number",
+      "title": "Tokens Served Today",
+      "default": 0
+    },
+    "phone": {
+      "type": "string",
+      "title": "Phone"
+    }
+  },
+  "required": [
+    "business_id",
+    "name"
+  ]
+}
